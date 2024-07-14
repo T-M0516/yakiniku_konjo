@@ -1,0 +1,57 @@
+@charset 'utf-8';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-bk);
+    font-family: "Noto Serif JP", serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: var(--text-gd);
+
+    line-height: 1.5;
+}
+
+p,
+a,
+li {
+    /* font-size: clamp(0.75rem, 0.65rem + 0.4vw, 1rem); */
+    /* font-size: clamp(0.938rem, 0.912rem + 0.1vw, 1rem); */
+    font-size: clamp(0.875rem, 0.841rem + 0.18vw, 1rem);
+    font-weight: 500;
+}
+
+a {
+    display: inline-block;
+    color: var(--text-gd);
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+dl {
+    color: var(--text-gd);
+}
+
+small {
+    color: var(--text-gd);
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: 1px solid var(--text-gd);
+    text-align: center;
+}

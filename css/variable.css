@@ -1,0 +1,9 @@
+@charset 'utf-8';
+
+:root {
+    --main-bk: #080808;
+    --text-gd: #CEC79D;
+    --wt: #fcfcfc;
+    --bk-80: rgba(8, 8, 8, .8);
+    --wt-80: rgba(252, 252, 252, .8);
+}
