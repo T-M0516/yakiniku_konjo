@@ -12,24 +12,37 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+a,
+li {
     color: var(--text-gd);
-
     line-height: 1.5;
+    letter-spacing: 0.1rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 1.727rem + 1.45vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 1.364rem + 0.73vw, 2rem);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 1.182rem + 0.36vw, 1.5rem);
 }
 
 p,
 a,
 li {
-    /* font-size: clamp(0.75rem, 0.65rem + 0.4vw, 1rem); */
-    /* font-size: clamp(0.938rem, 0.912rem + 0.1vw, 1rem); */
-    font-size: clamp(0.875rem, 0.841rem + 0.18vw, 1rem);
+    /* font-size: clamp(0.875rem, 0.841rem + 0.18vw, 1rem); */
+    /* font-size: clamp(0.813rem, 0.75rem + 0.25vw, 1rem); */
+    font-size: .8rem;
     font-weight: 500;
 }
 
 a {
     display: inline-block;
-    color: var(--text-gd);
     text-decoration: none;
 }
 

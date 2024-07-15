@@ -151,14 +151,22 @@ header {
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     place-items: center;
-    position: sticky;
+    position: fixed;
     top: 30%;
-    left: 100%;
+    left: 86%;
     z-index: 80;
     /* width: clamp(9.375rem, 6.25rem + 7.14vw, 12.5rem); */
     width: clamp(9.375rem, 7.5rem + 4.29vw, 11.25rem);
     aspect-ratio: 1;
     background-color: var(--text-gd);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    &.show {
+        opacity: .8;
+        visibility: visible;
+    }
 
     .reservation-link {
         color: var(--main-bk);
