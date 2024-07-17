@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', toggleBanner);
 });
 
-// topボタン
+// topボタン表示
 document.addEventListener('DOMContentLoaded', function() {
   const banner = document.querySelector('.top-btn');
   const scrollTrigger = 700; // スクロールして700px経過したら表示
@@ -39,4 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   window.addEventListener('scroll', toggleBanner);
+});
+
+// 時間差で.dedication-containerを表示
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+      const container = document.querySelector('.dedication-container');
+      container.classList.add('visible');
+  }, 1500);
 });
