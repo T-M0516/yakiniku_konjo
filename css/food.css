@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+.food {
+    text-align: center;
+
+    h1 {
+        margin-bottom: 3%;
+    }
+}
+
+.food-container {
+    margin: clamp(3.125rem, 2.5rem + 3.13vw, 5.625rem);
+}

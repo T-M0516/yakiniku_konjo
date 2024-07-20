@@ -54,3 +54,89 @@
         object-fit: cover;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .dedication {
+        grid-template: .6fr 60%/5% 1fr 5%;
+
+        .dedication-container {
+            width: 95%;
+            height: 85%;
+            padding: 1%;
+
+            h2 {
+                font-size: clamp(1.25rem, 1.172rem + 0.39vw, 1.563rem);
+            }
+
+            p {
+                font-size: clamp(0.813rem, 0.766rem + 0.23vw, 1rem);
+            }
+        }
+    }
+}
+
+/* ********************** */
+/* 魅力セクション */
+.attractive {
+    margin: clamp(2.5rem, 1.136rem + 7.27vw, 7.5rem) 10% clamp(2.5rem, 1.136rem + 7.27vw, 7.5rem) 10%;
+
+    h1 {
+        width: 50%;
+        margin: 0 auto 5%;
+        text-align: center;
+    }
+
+    .attractive-container {
+        display: grid;
+        grid-template: repeat(2, 1fr) /repeat(2, 1fr);
+        align-items: center;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .item-text h2 {
+            margin-bottom: 3%;
+        }
+
+        .item-text:nth-of-type(1) {
+            padding-left: 2rem;
+        }
+
+        .item-text:nth-of-type(2) {
+            padding-right: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .attractive {
+        width: 100%;
+        margin: 0 0 5%;
+
+        h1 {
+            width: auto;
+        }
+
+        .attractive-container {
+            grid-template: 35vh auto 35vh auto / 1fr;
+            margin: 0 1rem;
+
+
+
+            .item-text:nth-of-type(1) {
+                padding: 3%;
+                margin-bottom: 10%;
+            }
+
+            .item-text:nth-of-type(2) {
+                grid-row: 4;
+                padding: 3%;
+            }
+        }
+    }
+}
+
+/* ********************** */
