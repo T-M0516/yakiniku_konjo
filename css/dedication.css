@@ -78,7 +78,7 @@
 /* ********************** */
 /* 魅力セクション */
 .attractive {
-    margin: clamp(2.5rem, 1.136rem + 7.27vw, 7.5rem) 10% clamp(2.5rem, 1.136rem + 7.27vw, 7.5rem) 10%;
+    margin: 0 10% clamp(2.5rem, 1.136rem + 7.27vw, 7.5rem) 10%;
 
     h1 {
         width: 50%;

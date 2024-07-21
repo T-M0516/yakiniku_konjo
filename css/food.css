@@ -1,5 +1,6 @@
 @charset 'utf-8';
 
+/* お料理ページ */
 .food {
     text-align: center;
 
@@ -9,5 +10,81 @@
 }
 
 .food-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
     margin: clamp(3.125rem, 2.5rem + 3.13vw, 5.625rem);
+
+    .food-items {
+        flex-basis: 40%;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+
+        .food-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-size: clamp(1rem, 0.852rem + 0.73vw, 1.5rem);
+                /* font-size: clamp(0.9rem, 0.722rem + 0.89vw, 1.5rem); */
+                margin: 3% 0;
+            }
+
+            dl {
+                display: grid;
+                grid-template: repeat(2, 1fr)/auto 1fr;
+                width: 100%;
+
+                dt {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+
+                dt:nth-of-type(2) {
+                    grid-row: 2;
+                    margin-top: 3%;
+                }
+
+                dd {
+                    justify-self: end;
+                }
+
+                :nth-of-type(2) {
+                    grid-row: 2;
+                    margin-top: 3%;
+                }
+            }
+        }
+    }
+
+    .food-items:nth-of-type(3),
+    .food-items:nth-of-type(4) {
+        margin-top: 10%;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .food-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        .food-items {
+            margin-top: 20%;
+        }
+
+        .food-items:nth-of-type(3),
+        .food-items:nth-of-type(4) {
+            margin-top: 20;
+        }
+    }
+}
+
+/* ********************** */
