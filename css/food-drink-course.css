@@ -20,9 +20,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 5%;
-    margin: clamp(3.125rem, 2.5rem + 3.13vw, 5.625rem);
+    justify-content: space-around;
+    margin: clamp(3.125rem, 2.5rem + 3.13vw, 5.625rem) auto;
 
     .food-items {
         flex-basis: 40%;
@@ -82,6 +81,8 @@
     .food-container {
         flex-direction: column;
         flex-wrap: nowrap;
+        margin: clamp(3.125rem, 2.5rem + 3.13vw, 5.625rem) 1rem;
+
 
         .food-items {
             margin-top: 20%;
@@ -114,9 +115,8 @@
 .course-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 5%;
-    margin: clamp(3.125rem, 2.5rem + 3.13vw, 5.625rem);
+    justify-content: space-around;
+    margin: clamp(3.125rem, 2.5rem + 3.13vw, 5.625rem) auto;
 
     .course-items {
         flex-basis: 40%;
@@ -181,6 +181,7 @@
 @media screen and (max-width: 768px) {
     .course-container {
         flex-direction: column;
+        margin: clamp(3.125rem, 2.5rem + 3.13vw, 5.625rem) 1rem;
 
         .course-items .course-text .coursemenu {
             flex-direction: column;
