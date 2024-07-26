@@ -15,7 +15,6 @@ header {
     background-color: var(--main-bk);
 
     a {
-        /* grid-column: 1/2; */
         height: 100%;
         aspect-ratio: 1;
 
@@ -35,7 +34,6 @@ header {
     --translate: .5rem;
     display: grid;
     place-items: center;
-    /* width: 60px; */
     width: clamp(2.5rem, 2rem + 2vw, 3.75rem);
     aspect-ratio: 1;
     border: none;
@@ -43,24 +41,15 @@ header {
     cursor: pointer;
     transition: all .5s ease;
 
-    /* &:hover,
-    &:active {
-        background-color: rgba(252, 252, 252, 0.5);
-    } */
-
-
-
     &.is-active {
         --opacity: 0;
         --rotate: 135deg;
         --translate: 0;
     }
 
-
     span {
         display: block;
         width: 70%;
-        /* height: 5px; */
         height: clamp(0.125rem, 0.108rem + 0.09vw, 0.188rem);
         background-color: var(--text-gd);
         grid-area: 1 / 1 / -1 / -1;
@@ -81,7 +70,6 @@ header {
         }
     }
 }
-
 
 .menu {
     display: grid;
@@ -113,8 +101,6 @@ header {
         grid-row: 1;
 
         li {
-            /* width: 100%; */
-
             a:hover {
                 color: var(--wt);
                 transition: all .5s ease;
@@ -155,7 +141,6 @@ header {
     top: 30%;
     right: 0;
     z-index: 80;
-    /* width: clamp(9.375rem, 6.25rem + 7.14vw, 12.5rem); */
     width: clamp(9.375rem, 7.5rem + 4.29vw, 11.25rem);
     aspect-ratio: 1;
     background-color: var(--text-gd);
@@ -252,7 +237,6 @@ header {
         .icon-insta {
             grid-column: 1;
             grid-row: 1;
-            /* width: 40%; */
             width: clamp(1rem, 0.5rem + 1.14vw, 1.5rem);
             aspect-ratio: 1;
             transition: all .5s ease;
@@ -270,7 +254,6 @@ header {
         .icon-X {
             grid-column: 2;
             grid-row: 1;
-            /* width: 40%; */
             width: clamp(1rem, 0.5rem + 1.14vw, 1.5rem);
             aspect-ratio: 1;
             transition: all .5s ease;

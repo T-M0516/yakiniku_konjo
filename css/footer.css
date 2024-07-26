@@ -34,34 +34,26 @@
 /* フッター */
 footer {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-    /* grid-template-columns: minmax(300px, 1.3fr) minmax(300px, 1fr); */
     grid-template: auto / repeat(2, 1fr);
     padding: clamp(2.5rem, 1.5rem + 4vw, 5rem) clamp(0.938rem, -0.438rem + 5.5vw, 4.375rem);
     gap: 5%;
 
-
     iframe {
         width: 100%;
         height: clamp(21.875rem, 20.625rem + 5vw, 25rem);
-        /* height: clamp(18.75rem, 11.25rem + 30vw, 37.5rem); */
     }
 
     .shopinfo {
         display: grid;
         grid-template: 1fr auto/ auto;
 
-        /* margin: 0 clamp(3.125rem, 2.375rem + 3vw, 5rem); */
         .shopinfo-container {
             display: grid;
             grid-template: .1fr .1fr .2fr .1fr .1fr .2fr .8fr / auto;
 
-            /* grid-template: auto auto auto 1fr/ auto; */
-            /* gap: 3%; */
             p:nth-of-type(1) {
                 font-size: clamp(1.25rem, 1.176rem + 0.37vw, 1.5rem);
             }
-
 
             p:nth-of-type(2) {
                 align-self: end;
@@ -116,7 +108,6 @@ footer {
             bottom: 0;
             margin: auto;
         }
-
     }
 }
 
