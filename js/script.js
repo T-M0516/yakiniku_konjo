@@ -48,3 +48,60 @@ document.addEventListener('DOMContentLoaded', function() {
       container.classList.add('visible');
   }, 1500);
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener('DOMContentLoaded', () => {
+  // イントロダクションセクションのアニメーション
+  gsap.from('.introduction img', {
+    scrollTrigger: {
+      trigger: '.introduction',
+      start: 'top center',
+      end: 'top center',
+      scrub: 3,
+    },
+    opacity: 0,
+    scale: 0.8,
+    rotation: 0,
+    duration: 3
+  });
+
+  // メニューセクションのアニメーション
+  gsap.from('.shopmenu img', {
+    scrollTrigger: {
+      trigger: '.shopmenu',
+      start: 'top center',
+      end: 'top center',
+      scrub: 3,
+    },
+    x: '-100%',
+    opacity: 0,
+    duration: 3
+  });
+
+  // コースセクションのアニメーション
+  gsap.from('.course img', {
+    scrollTrigger: {
+      trigger: '.course',
+      start: 'top center',
+      end: 'top center',
+      scrub: 3
+    },
+      x: '100%',
+    opacity: 0,
+    duration: 3
+  });
+
+  // 空間セクションのアニメーション
+gsap.from('.space img', {
+  scrollTrigger: {
+    trigger: '.space',
+    start: 'top center',
+    end: 'top center',
+    scrub: 3,
+  },
+  x: '-100%',
+  opacity: 0,
+  duration: 3
+});
+});
