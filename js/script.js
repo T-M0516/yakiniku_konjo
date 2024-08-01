@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() {
       const container = document.querySelector('.dedication-container');
       container.classList.add('visible');
-  }, 1500);
+  }, 1000);
 });
 
 gsap.registerPlugin(ScrollTrigger);
